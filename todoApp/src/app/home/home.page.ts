@@ -18,7 +18,7 @@ export class HomePage {
       component: CreateTaskComponent,
       showBackdrop: true,
       backdropDismiss: true,
-      animated: true,
+      animated: true
     })
 
     return await modal.present();

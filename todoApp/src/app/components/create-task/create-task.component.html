@@ -46,22 +46,22 @@
         </ion-item>
       </ion-list>
     </ion-card>
-
+    
     <ion-modal [keepContentsMounted]="true">
       <ng-template>
-        <ion-datetime [presentation]="'date'" id="datetime" formControlName="setDate"></ion-datetime>
+        <ion-datetime presentation="date" id="datetime" formControlName="setDate"></ion-datetime>
       </ng-template>
     </ion-modal>
 
     <ion-modal [keepContentsMounted]="true">
       <ng-template>
-        <ion-datetime [presentation]="'time'" id="startTime" formControlName="startTime" [showDefaultButtons]="false"></ion-datetime>
+        <ion-datetime presentation="time" id="startTime" formControlName="startTime" [showDefaultButtons]="false"></ion-datetime>
       </ng-template>
     </ion-modal>
 
     <ion-modal [keepContentsMounted]="true">
       <ng-template>
-        <ion-datetime [presentation]="'time'" id="endTime" formControlName="endTime" [showDefaultButtons]="false"></ion-datetime>
+        <ion-datetime presentation="time" id="endTime" formControlName="endTime" [showDefaultButtons]="false"></ion-datetime>
       </ng-template>
     </ion-modal>
 
@@ -72,10 +72,4 @@
     </div>
   </form>
 </ion-content>
-
-
-    
-      
-      
-
 

@@ -7,6 +7,7 @@ import { FormGroup, FormControl } from '@angular/forms';
   templateUrl: './create-task.component.html',
   styleUrls: ['./create-task.component.scss'],
 })
+
 export class CreateTaskComponent implements OnInit {
   priority = ['High', 'Medium', 'Low'];
 
