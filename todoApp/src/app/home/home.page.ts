@@ -13,7 +13,7 @@ export class HomePage {
   constructor(private modalCtrl : ModalController) {}
 
   async addTask(){
-
+    debugger
     const modal = await this.modalCtrl.create({
       component: CreateTaskComponent,
       showBackdrop: true,

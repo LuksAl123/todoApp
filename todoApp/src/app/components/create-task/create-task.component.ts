@@ -14,7 +14,7 @@ export class CreateTaskComponent implements OnInit {
   todoForm = new FormGroup({
     Title: new FormControl(''),
     Description: new FormControl(''),
-    Priority: new FormControl(''),
+    Priority: new FormControl('priority'),
     setDate: new FormControl(new Date().toISOString()),
     startTime: new FormControl(new Date().toISOString()),
     endTime: new FormControl(new Date().toISOString()),
