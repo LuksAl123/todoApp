@@ -6,6 +6,8 @@
     </div>
   </div>
 
+  <app-icon-selection (iconSelected)="onIconSelected($event)"></app-icon-selection>
+
   <form [formGroup]="todoForm" (ngSubmit)="onSubmit()">
     <ion-card>
       <ion-item>
@@ -64,6 +66,10 @@
         <ion-datetime presentation="time" id="endTime" formControlName="endTime" [showDefaultButtons]="false"></ion-datetime>
       </ng-template>
     </ion-modal>
+    
+    <ion-card>
+      <app-color-selection (colorSelected)="onColorSelected($event)"></app-color-selection>
+    </ion-card>
 
     <div class="button">
       <ion-button expand="block" size="large" type="submit">
